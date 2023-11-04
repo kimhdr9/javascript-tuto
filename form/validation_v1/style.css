@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 480px;
+    margin-top: 100px;
+    background-color: white;
+}
+.control {
+    margin: 10px;
+}
+.label {
+    text-align: center;
+}
+.valide
+{
+    margin-top: 30px;
+}
+#error_message {
+    display: none;
+}

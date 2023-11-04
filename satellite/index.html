@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Fetch Json from API and map lat lon</title>
+</head>
+<body>
+    <h1> where is the ISS ?</h1>
+    <p>
+        latitude : <span id=lat></span>
+        <br>
+        longitude : <span id="lon"></span>
+    </p>
+    <script>
+        // let pos = {
+        //     lat : -45,
+        //     lon: 112
+        // }
+        // console.log(pos);
+
+        const api_url = 'https://api.wheretheiss.at/v1/satellites/25544';
+
+        async function getISS() {
+            const reponse = await fetch(api_url);
+            // passage au format jason 
+            const data = await reponse.json();
+            // console.log(data.latitude);
+            // console.log(data.longitude);
+            // autre méthode
+            const { latitude,longitude} = data;
+
+            console.log(latitude);
+            console.log(longitude);
+            document.getElementById('lat').textContent = latitude;
+            document.getElementById('lon').textContent = longitude;
+            // var mymap = L.map('mapid').setView([latitude, longitude], 2);
+        }
+//  appel de la fonction 
+        getISS();
+    </script>
+    
+</body>
+</html>

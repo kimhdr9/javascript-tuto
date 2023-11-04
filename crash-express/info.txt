@@ -1,0 +1,31 @@
+creation d'un compte getpostman.com
+compte kimhdr9@gmial.com
+Express JS Crash course by Traversy Media 2019/02/22
+Cette présentation est orientée API
+
+
+npm init
+
+attention ne pas nommer le repertoire Express
+
+installation : npm i express
+
+pour eviter d'arrêter et de recharger constament installons le module nodemon
+
+npm i -D nodemon
+
+l'option -D en mode developpement
+
+ensuite il faut modifier package.json
+
+"scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+
+attention pour exécuter :
+
+npm run dev
+
+Pour utiliser postman il faut installer un agent sur le poste.
+

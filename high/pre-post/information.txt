@@ -1,0 +1,10 @@
+initialisation d'un paquet
+
+npm init -y
+
+l'option -y : oui à tout
+
+npm run test
+
+échec en effet à cause du ext 1
+"test": "echo \"Error: no test specified\" && exit 1"

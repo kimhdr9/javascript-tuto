@@ -1,0 +1,15 @@
+{
+  "name": "pre-post",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ignore" : "echo \"\" > .gitiginore",
+    "preignore" :"node touch .gitignore",
+    "touch" :"node touch titi.txt",
+    "postignore" :"echo \".gitignore\n .vscode\nnode_modules/\" > .gitignore"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

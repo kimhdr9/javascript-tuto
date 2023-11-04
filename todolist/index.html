@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- mon style -->
+    <link rel="stylesheet" href="style.css">
+    <title>todo list</title>
+</head>
+<body>
+    <div class="container" id="formulaire">
+        <h1 class="title is-1">Todo list</h1>
+        <input type="text" class="input is-danger" placeholder="Entrer une chose à faire" id="todo">
+        <div class="select is-round is-info">
+            <select id="monchoix">
+                <option value="is-danger"> Urgent </option>
+                <option value="is-warning"> Normal  </option>
+                <option value="is-success">  Pas pressé </option>
+            </select>
+        </div>
+        <button class="button is-primary is-light" id="btntodo"> enregistrer </button>
+    </div>
+    <div class="container" id="liste-todo">
+        <h2 class="subtitle is-2" id="titre-chose-faire"> Choses à faire</h2>
+        <div id="debut-liste"></div>
+    </div>
+    <!-- le javascript -->
+    <script src="./main.js"></script>
+</body>
+</html>

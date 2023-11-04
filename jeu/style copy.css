@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    display: flex;
+}
+
+.container{
+    background-color: rgb(61, 155, 53);
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    width: 800px;
+}
+
+.container h1{
+    font-family: 'Squada One', cursive;
+    font-size: 64px;
+    color: rgb(111, 197, 176);
+}
+.container h2{
+    font-size: 23px;
+}
+.coeur{
+    width: 80px;
+}
+
+.block {
+    background-color: aqua;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 50px;
+    width:500px;
+}
+
+label {
+    font-size: 23px;
+}
+#nombre {
+    width: 250px;
+}

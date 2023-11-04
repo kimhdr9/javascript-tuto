@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin-top: 150px;
+    background:rgb(235, 230, 230);
+    width: 450px;
+}
+/* image de page de fond  */
+ #monblock{
+    position : absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("image/background.jpg");
+    background-size: center;
+    background-size: cover;
+} 
+#titre {
+    text-align: center;
+}
+/* n'affiche pas par défaut les états */
+#userstate, #usericon,#passstate,#passicon{
+    display: none;
+}

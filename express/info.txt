@@ -1,0 +1,16 @@
+creation d'un compte getpostman.com
+compte kimhdr9@gmial.com
+Express JS Cras course by Traversy Media 2019/02/22
+
+ouvrir un terminal
+
+npm init -y
+
+l'option -y yes aux questions posées par l'initiallisation
+
+puis installer le module Express
+
+npm i express 
+
+i pour install
+

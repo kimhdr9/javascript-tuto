@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bulma cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- mon style -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Form en javascript et bulma</title>
+</head>
+<body class=" has-background-info">
+    <div class="container">
+        <div class="flied">
+            <label for="" class="label is-large ">CONTACT US</label>
+            <article class="message is-danger">
+                <div class="message-body" id="error_message">
+
+                </div>
+            </article>
+            <form id="myform" onsubmit="return validation()">
+                <div class="control has-icons-left has-icon-right">
+                    <input type="text" class="input" placeholder="Name" id="name">
+                    <span class="icon is-small is-left">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </div>
+                <div class="control">
+                    <input type="text" class="input" placeholder="Subject" id="subject">
+                </div>
+                <div class="control has-icons-left has-icon-right">
+                    <input type="text" class="input" placeholder="Phone" id="phone">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-mobile-alt"></i>
+                    </span>
+                </div>
+                <div class="control has-icons-left has-icon-right">
+                    <input type="email" class="input" placeholder="Email" id="email">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope-square"></i>
+                    </span>
+                </div>
+                <div class="control">
+                    <textarea class="textarea has-fixed-size" id="blabla" placeholder="Message"></textarea>
+                </div>
+                <div class="valide">
+                    <button class="button is-warning is-fullwidth is-medium is-rounded is-uppercase">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

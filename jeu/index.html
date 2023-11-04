@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeu Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Trouve le nombre !</h1>
+        <h2>Trouve le bon nombre entre 10 et 100. Tu as 5 essais !</h2>
+        <div class="vies">
+            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon name="heart"></ion-icon>
+        </div>  
+        <form id="inputBox">
+            <label for="number" >Entrez un nombre :</label>
+            <input type="number" class="input" id="number"  min="0" max="100" required>
+            <button class="button" type="submit" id="essayerBtn">Essayer</button>
+            <p id="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid!</p>
+            <button id="rejouer">Rejouer ?</button>
+        </form>
+        <p class="details">*Brulant = +-2; Chaud +/-5; Tiède +/-10; Froid > 10</p>
+    </div>  
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

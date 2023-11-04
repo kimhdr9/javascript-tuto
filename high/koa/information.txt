@@ -1,0 +1,12 @@
+
+koajs.com
+
+npm install koa
+
+npm i -D nodemon
+
+modifier dans package.json
+"start": "nodemon index.js"
+
+
+pour transformer le site web en emetteur de fichier json

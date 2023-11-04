@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bulma cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- mon style -->
+    <link rel="stylesheet" href="style.css">
+    <title>Compter des mots</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title is-2"> Compteurs de mots</h1>
+        <div class="block">
+            <div class="field">
+                <label class="label">Zone de texte</label>
+                <div class="control">
+                  <textarea class="textarea zonedetexte" placeholder="Votre Texte.." id="ZoneTexte"></textarea>
+                </div>
+              </div>
+        </div>
+        <div class="control">
+            <button class="button is-link btncompter" id="BoutonCompter">Compter</button>
+        </div>
+        <section>
+            <div class="block has-blue-text" id="Nombremots">
+
+            </div>
+        </section>
+    </div>
+<script src="./main.js"></script>
+</body>
+</html>
